@@ -28,5 +28,19 @@ class TestModel(models.Model):
         copy=False,
         default="new"
     )
+    property_type_id=fields.Many2one("test.model.type",string='Types')
+    buyer_id = fields.Many2one(
+        'res.partner',
+        string='Buyer',
+        copy=False
+    )
+    salesman_id = fields.Many2one(
+        'res.users',
+        string='Salesman',
+        default=lambda self: self.env.user
+    )
+    tax_ids=fields.Many2many("account.tax",string="Налоги")
+    tag_ids=fields.Many2many("test.model.tag", string='Тег')
+
 
 

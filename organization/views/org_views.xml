@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+ <record id="test_dispetcher_one"   model="ir.actions.act_window">
+    <field name="name">Создать заявку</field>
+    <field name="res_model">org.bid</field>
+    <field name="view_mode">tree,form</field>
+ </record>
+
+ <record id="test_miniboss_one"   model="ir.actions.act_window">
+    <field name="name">Сценарий 2</field>
+    <field name="res_model">org.task</field>
+    <field name="view_mode">tree,form</field>
+ </record>
+
+
+
+</odoo>

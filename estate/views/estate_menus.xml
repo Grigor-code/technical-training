@@ -2,7 +2,15 @@
 <odoo>
  <menuitem id="test_menu_root" name="Test">
     <menuitem id="test_first_level_menu" name="First Level">
-        <menuitem id="test_model_menu_action" action="test_model_action"/>
+        <menuitem id="test_model_menu_action" action="test_model_action"  sequence="1"/>
+        <menuitem id="test_model_menu_types" action="test_model_types"  sequence="2"/>
+        <menuitem id="test_model_menu_tags" action="test_model_tags"  sequence="3"/>
+    </menuitem>
+    <menuitem id="test_the_level_menu" name="The Level">
+        <menuitem id="test_model_menu_action2" action="test_model_action"  sequence="1"/>
+        <menuitem id="test_model_menu_types2" action="test_model_types"  sequence="2"/>
+        <menuitem id="test_model_menu_tags2" action="test_model_tags"  sequence="3"/>
     </menuitem>
 </menuitem>
+
 </odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_root" name="Test1">
+        <menuitem id="first_level_menu" name="Dispecher">
+            <menuitem id="dispetcher_one" action="test_dispetcher_one" sequence="1" />
+        </menuitem>
+        <menuitem id="two_level_menu" name="Руководитель подразделения">
+            <menuitem id="mini_boss_one" action="test_miniboss_one" sequence="1" />
+            <!-- <menuitem id="mini_boss_two" action="test_miniboss_two" sequence="1" />
+            <menuitem id="mini_boss_three" action="test_miniboss_three" sequence="1" />
+            <menuitem id="mini_boss_four" action="test_miniboss_four" sequence="1" /> -->
+        </menuitem>
+        <!-- <menuitem id="three_level_menu" name="Сотрудник подразделения">
+            <menuitem id="employee_one" action="test_employee_one" sequence="1" />
+            <menuitem id="employee_two" action="test_employee_two" sequence="1" />
+
+        </menuitem>
+        <menuitem id="four_level_menu" name="Руководитель проекта">
+            <menuitem id="boss_one" action="test_boss_one" sequence="1" />
+        </menuitem> -->
+
+    </menuitem>
+</odoo>
