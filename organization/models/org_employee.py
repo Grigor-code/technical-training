@@ -13,7 +13,7 @@ from odoo import fields, models
 class OrgEmployee(models.Model):
     _name="org.employee"
     _description="Org Employee"
-    name=fields.Char(string="ФИО",required=True)
+    name=fields.Char(string="Компетенции",required=True)
     number=fields.Integer()
     union=fields.Many2one("org.union",string="Подразделение")
     post=fields.Selection(selection=[('диспечер','диспечер'),('Руководитель подразделения','Руководитель подразделения'),('Сотрудник подразделения','Сотрудник подразделения'),('Руководитель проекта','Руководитель проекта')])

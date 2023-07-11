@@ -6,11 +6,99 @@
     <field name="view_mode">tree,form</field>
  </record>
 
+
+ 
+
  <record id="test_miniboss_one"   model="ir.actions.act_window">
-    <field name="name">Сценарий 2</field>
+    <field name="name">Календарный план</field>
     <field name="res_model">org.task</field>
     <field name="view_mode">tree,form</field>
  </record>
+ <record id="test_miniboss_two"   model="ir.actions.act_window">
+   <field name="name">Изменить дату задачи</field>
+   <field name="res_model">org.task</field>
+   <field name="view_mode">tree,form</field>
+</record>
+<record id="test_miniboss_three"   model="ir.actions.act_window">
+   <field name="name">Изменить стоймость часа работника</field>
+   <field name="res_model">org.task</field>
+   <field name="view_mode">tree,form</field>
+</record>
+<record id="test_miniboss_four"   model="ir.actions.act_window">
+   <field name="name">Сводная загрузка</field>
+   <field name="res_model">org.task</field>
+   <field name="view_mode">tree,form</field>
+</record>
+
+<record id="test_employee_one"   model="ir.actions.act_window">
+   <field name="name">Мои задачи</field>
+   <field name="res_model">org.task</field>
+   <field name="view_mode">tree,form</field>
+</record>
+<record id="test_employee_two"   model="ir.actions.act_window">
+   <field name="name">Изменить сроки</field>
+   <field name="res_model">org.task</field>
+   <field name="view_mode">tree,form</field>
+</record>
+<record id="test_boss_one"   model="ir.actions.act_window">
+   <field name="name">Заявки подразделения</field>
+   <field name="res_model">org.task</field>
+   <field name="view_mode">tree,form</field>
+</record>
+
+
+ <record id="test_dispetcher_one_tree" model="ir.ui.view">
+        <field name="name">org.bid.view.tree</field>
+        <field name="model">org.bid</field>
+        <field name="arch" type="xml">
+            <tree string="Properties" >
+                <field name="name"/>
+                <field name="task_ids"/>
+                <field name="status"/>
+                <field name="planned_date" optional="hide"/>
+                <field name="actual_date" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+    <record id="test_dispetcher_one_form" model="ir.ui.view">
+        <field name="name">org.bid.view.form</field>
+        <field name="model">org.bid</field>
+        <field name="arch" type="xml">
+            <form string="detail">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name"/>
+                        </h1></div>
+                    <group>
+                        <group>
+                            <field name="description" />
+                            <field name="obj"/>
+                        </group>
+                        
+                    </group>
+                    <notebook>
+                        <page name="date" string="Date">
+                            <group>
+                                <field name="status"/>
+                                <field name="date_create"/>
+                                <field name="planned_date"/>
+                                <field name="actual_date"/>
+                            
+                                
+                            </group>
+                        </page>
+                        <page string="Задачи и компетенции">
+                            <group>
+                              <field name="task_ids"/>
+                              <field name="competence"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
 
 
