@@ -1,0 +1,9 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_org_bid,access_org_bid,model_org_bid,base.group_user,1,1,1,1
+access_org_employee,access_org_employee,model_org_employee,base.group_user,1,1,1,1
+access_org_object,access_org_object,model_org_object,base.group_user,1,1,1,1
+access_org_property,access_org_property,model_org_property,base.group_user,1,1,1,1
+access_org_resource,access_org_resource,model_org_resource,base.group_user,1,1,1,1
+access_org_set_task,access_org_set_task,model_org_set_task,base.group_user,1,1,1,1
+access_org_task,access_org_task,model_org_task,base.group_user,1,1,1,1
+access_org_union,access_org_union,model_org_union,base.group_user,1,1,1,1
